@@ -2,6 +2,7 @@
 "use client";
 
 import Image from "next/image";
+import heroImageFile from "@/components/public/ecmsbanner23.jpg";
 import Link from "next/link";
 import { Navbar } from "@/components/public/navbar";
 import { Footer } from "@/components/public/footer";
@@ -104,7 +105,7 @@ export default function HomePage() {
             <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="rounded-[4rem] overflow-hidden shadow-2xl border-[12px] border-white transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
                 <Image 
-                  src={heroImage?.imageUrl || "https://picsum.photos/seed/justice1/800/1000"} 
+                  src={heroImage?.imageUrl || heroImageFile} 
                   alt="ECMS Platform" 
                   width={800}
                   height={1000}
