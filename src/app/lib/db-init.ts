@@ -13,13 +13,13 @@ export async function initializeDatabase() {
       primaryColor: "#0B6B3A",
       secondaryColor: "#1A2F25",
       accentColor: "#6DF26D",
-      contactEmail: "info@ecms.gov.ng",
-      contactPhone: "+234 800 JUSTICE",
-      address: "Century Information Systems Ltd, Head Office Building, Legal District",
+      contactEmail: "office@eCourtMS.com",
+      contactPhone: "+23407039000997",
+      address: "Suite B051, H&A Plaza, Wuye, Abuja 900108, Federal Capital Territory",
       metaTitle: "ECMS - Modern Justice Foundation",
       metaDescription: "The premier electronic court management system for modern judiciaries.",
       logoUrl: "",
-      footerText: "© 2024 Century Information Systems Ltd. All Rights Reserved."
+      footerText: "© 2026 Century Information Systems Ltd. All Rights Reserved."
     });
   }
 
