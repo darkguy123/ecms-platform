@@ -133,7 +133,7 @@ export default function HomePage() {
                   <h3 className="text-6xl md:text-6xl font-headline font-bold leading-tight">
                     Redefining Justice for the <span className="text-accent">21st Century</span>
                   </h3>
-                  <p className="text-lg text-white/70 leading-relaxed font-medium italic">
+                  <p className="text-primary text-xs text-white/70 leading-relaxed font-medium italic">
                     {SITE_DATA.about.mission}
                   </p>
                 </div>
@@ -153,7 +153,7 @@ export default function HomePage() {
                   <div className="h-16 w-16 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
                     <History className="text-accent h-6 w-6" />
                   </div>
-                  <p className="text-lg text-white/80 leading-relaxed">
+                  <p className="text-primary text-xs text-white/80 leading-relaxed">
                     {SITE_DATA.about.history}
                   </p>
                 </div>
