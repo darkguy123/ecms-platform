@@ -7,10 +7,10 @@
 export const SITE_DATA = {
   settings: {
     siteName: "ECMS - Electronic Court Management System",
-    contactEmail: "info@ecms.gov.ng",
-    contactPhone: "+234 800 JUSTICE",
-    address: "Century Information Systems Ltd, Head Office Building, Legal District",
-    footerText: "© 2024 Century Information Systems Ltd. All Rights Reserved."
+    contactEmail: "office@eCourtMS.com",
+    contactPhone: "+23407039000997, +2348180188858",
+    address: "Suite B051, H&A Plaza, Wuye, Abuja 900108, Federal Capital Territory",
+    footerText: "© 2026 Century Information Systems Ltd. All Rights Reserved."
   },
   home: {
     heroTitle: "Electronic Court Management System",
@@ -55,9 +55,9 @@ export const SITE_DATA = {
     title: "Proven Implementation",
     description: "Deployed and validated through collaborations with Nigeria's premier judicial institutions.",
     federal: [
-      { name: "National Judicial Council (NJC)", role: "System governance and standards" },
       { name: "Federal High Court of Nigeria", role: "Digital process and records management" },
-      { name: "Supreme Court of Nigeria", role: "Highest appellate court digitisation" }
+      { name: "Corporate Affairs Commission (CAC)", role: "Data authentication service" },
+      { name: "Bureau of Public Procurement (BPP)", role: "Data authentication service" }
     ],
     states: [
       { name: "FCT High Court", status: "Active" },
