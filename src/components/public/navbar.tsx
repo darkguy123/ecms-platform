@@ -1,58 +1,89 @@
 
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Scale, Menu } from "lucide-react";
-import { useState } from "react";
+import { Scale, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SITE_DATA } from "@/data/site-data";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: "About", href: "#about" },
+    { name: "Modules", href: "#modules" },
+    { name: "FAQ", href: "#faq" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="bg-primary p-2 rounded-xl">
-            <Scale className="text-white h-6 w-6" />
+    <header className={cn(
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+      scrolled ? "py-4 bg-white/90 backdrop-blur-xl shadow-lg border-b border-primary/5" : "py-8 bg-transparent"
+    )}>
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="bg-primary p-2.5 rounded-xl shadow-lg shadow-primary/20 group-hover:scale-110 transition-transform">
+            <Scale className="text-accent h-6 w-6" />
           </div>
-          <span className="font-headline font-extrabold text-2xl text-primary tracking-tighter italic">ECMS</span>
+          <span className="font-headline font-black text-2xl tracking-tighter text-primary">ECMS</span>
         </Link>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-10">
-          <Link href="/" className="text-sm font-bold hover:text-accent transition-colors">Home</Link>
-          <Link href="/about" className="text-sm font-bold hover:text-accent transition-colors">About</Link>
-          <Link href="/modules" className="text-sm font-bold hover:text-accent transition-colors">Modules</Link>
-          <Link href="/faq" className="text-sm font-bold hover:text-accent transition-colors">FAQ</Link>
-          <Link href="/contact" className="text-sm font-bold hover:text-accent transition-colors">Contact</Link>
-        </div>
+        {/* Desktop Nav */}
+        <nav className="hidden lg:flex items-center gap-10">
+          {navLinks.map((link) => (
+            <a 
+              key={link.name} 
+              href={link.href} 
+              className="text-sm font-bold text-primary/70 hover:text-primary uppercase tracking-widest transition-colors"
+            >
+              {link.name}
+            </a>
+          ))}
+          <Button asChild className="bg-primary text-white hover:bg-primary/90 rounded-full px-8 h-12 font-bold shadow-lg shadow-primary/20">
+            <Link href={SITE_DATA.home.demoLink} target="_blank">DEMO</Link>
+          </Button>
+        </nav>
 
-        <div className="flex items-center gap-4">
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-8 font-bold hidden md:flex">
-            <Link href="https://ecmsfhcadmin.centurycodes.ng/">DEMO</Link>
-          </Button>
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            <Menu className="h-6 w-6" />
-          </Button>
-        </div>
+        {/* Mobile Toggle */}
+        <button 
+          className="lg:hidden p-2 text-primary" 
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+        </button>
       </div>
 
       {/* Mobile Menu */}
       <div className={cn(
-        "md:hidden absolute top-20 left-0 right-0 bg-white border-b p-6 space-y-4 transition-all duration-300 origin-top",
-        isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
+        "lg:hidden fixed inset-0 top-[88px] bg-white z-40 p-8 transition-all duration-500 ease-in-out",
+        mobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
-        <Link href="/" className="block text-lg font-bold">Home</Link>
-        <Link href="/about" className="block text-lg font-bold">About</Link>
-        <Link href="/modules" className="block text-lg font-bold">Modules</Link>
-        <Link href="/faq" className="block text-lg font-bold">FAQ</Link>
-        <Link href="/contact" className="block text-lg font-bold">Contact</Link>
-        <Button asChild className="w-full bg-accent text-accent-foreground font-bold">
-          <Link href="https://ecmsfhcadmin.centurycodes.ng/">DEMO</Link>
-        </Button>
+        <nav className="flex flex-col gap-8 items-center text-center">
+          {navLinks.map((link) => (
+            <a 
+              key={link.name} 
+              href={link.href} 
+              className="text-2xl font-black text-primary"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {link.name}
+            </a>
+          ))}
+          <Button asChild className="w-full h-16 text-xl rounded-full" onClick={() => setMobileMenuOpen(false)}>
+            <Link href={SITE_DATA.home.demoLink} target="_blank">DEMO</Link>
+          </Button>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
