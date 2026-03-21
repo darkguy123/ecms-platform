@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import heroImageFile from "@/components/public/ecmsbanner23.jpg";
+import heroImageFile from "@/components/public/hero-collage-Photoroom.png";
 import Link from "next/link";
 import { Navbar } from "@/components/public/navbar";
 import { Footer } from "@/components/public/footer";
