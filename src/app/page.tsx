@@ -1,7 +1,7 @@
 
 "use client";
 
-import Image from "@/components/public/ecmsbanner23.jpg";
+import Image from "next/image";
 import heroImageFile from "@/components/public/ecmsbanner23.jpg";
 import Link from "next/link";
 import { Navbar } from "@/components/public/navbar";
