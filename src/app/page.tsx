@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import heroImageFile from "@/components/public/hero-collage-Photoroom.png";
+import LogoCarousel from "@/components/public/LogoCarousel";
 import Link from "next/link";
 import { Navbar } from "@/components/public/navbar";
 import { Footer } from "@/components/public/footer";
