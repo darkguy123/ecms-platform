@@ -166,7 +166,7 @@ export default function HomePage() {
                     alt="Modern Courtroom" 
                     width={1200}
                     height={1200}
-                    className="transition-transform duration-400 ease-in-out transform hover:scale-150"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
