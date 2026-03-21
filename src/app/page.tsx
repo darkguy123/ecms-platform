@@ -83,9 +83,9 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 bg-primary/5 border border-primary/10 px-4 py-2 rounded-full">
                 <span className="text-primary font-bold text-xs uppercase tracking-widest">Digital Judiciary Evolution</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-headline font-black text-primary leading-[1.1] tracking-tight">
+              <h2 className="text-5xl md:text-7xl font-headline font-black text-primary leading-[1.1] tracking-tight">
                 {SITE_DATA.home.heroTitle}
-              </h1>
+              </h2>
               <p className="text-2xl md:text-3xl font-headline font-semibold text-accent italic">
                 {SITE_DATA.home.heroSubtitle}
               </p>
