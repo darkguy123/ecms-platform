@@ -1,0 +1,58 @@
+
+{
+  "entities": {
+    "PageContent": {
+      "title": "Page Content",
+      "description": "Standardized text content for a specific page.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "body": { "type": "string" },
+        "heroTitle": { "type": "string" },
+        "heroSubtitle": { "type": "string" }
+      }
+    },
+    "FAQ": {
+      "title": "FAQ",
+      "description": "A frequently asked question and its answer.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["question", "answer"]
+    },
+    "SiteSettings": {
+      "title": "Site Settings",
+      "description": "Global configuration for the ECMS platform.",
+      "type": "object",
+      "properties": {
+        "siteName": { "type": "string" },
+        "contactEmail": { "type": "string" },
+        "contactPhone": { "type": "string" },
+        "address": { "type": "string" },
+        "footerText": { "type": "string" }
+      }
+    }
+  },
+  "auth": {
+    "providers": ["password"]
+  },
+  "firestore": {
+    "/content/pages": {
+      "schema": "#/backend/entities/PageContent",
+      "description": "General text content for various site pages (home, about, terms, privacy)."
+    },
+    "/content/faqs/{faqId}": {
+      "schema": "#/backend/entities/FAQ",
+      "description": "Collection of frequently asked questions."
+    },
+    "/settings/general": {
+      "schema": "#/backend/entities/SiteSettings",
+      "description": "Global application settings and contact info."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-justice",
+      "description": "Abstract justice and technology background",
+      "imageUrl": "https://picsum.photos/seed/justice1/1200/800",
+      "imageHint": "justice technology"
+    },
+    {
+      "id": "court-room",
+      "description": "Modern courtroom interior",
+      "imageUrl": "https://picsum.photos/seed/court/800/600",
+      "imageHint": "courtroom interior"
+    },
+    {
+      "id": "digital-law",
+      "description": "Digital law and gavel",
+      "imageUrl": "https://picsum.photos/seed/law/600/400",
+      "imageHint": "legal technology"
+    },
+    {
+      "id": "security-tech",
+      "description": "Data security and encryption concept",
+      "imageUrl": "https://picsum.photos/seed/security/600/400",
+      "imageHint": "data security"
+    },
+    {
+      "id": "server-room",
+      "description": "Government data center",
+      "imageUrl": "https://picsum.photos/seed/server/800/600",
+      "imageHint": "server room"
+    }
+  ]
+}

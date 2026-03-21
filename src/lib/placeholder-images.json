@@ -1,0 +1,22 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-justice",
+      "description": "Professional judicial digital foundation imagery",
+      "imageUrl": "https://picsum.photos/seed/justice1/800/1000",
+      "imageHint": "judicial technology"
+    },
+    {
+      "id": "court-room",
+      "description": "Modern courtroom with tech integration",
+      "imageUrl": "https://picsum.photos/seed/courtroom/800/600",
+      "imageHint": "courtroom interior"
+    },
+    {
+      "id": "digital-law",
+      "description": "Conceptual legal technology visuals",
+      "imageUrl": "https://picsum.photos/seed/law/600/400",
+      "imageHint": "legal technology"
+    }
+  ]
+}
