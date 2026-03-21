@@ -130,28 +130,28 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="space-y-10">
                 <div className="space-y-4">
-                  <h3 className="text-4xl md:text-6xl font-headline font-bold leading-tight">
+                  <h3 className="text-6xl md:text-6xl font-headline font-bold leading-tight">
                     Redefining Justice for the <span className="text-accent">21st Century</span>
                   </h3>
-                  <p className="text-xl text-white/70 leading-relaxed font-medium italic">
+                  <p className="text-lg text-white/70 leading-relaxed font-medium italic">
                     {SITE_DATA.about.mission}
                   </p>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-8 py-10 border-y border-white/10">
                   <div className="space-y-2">
-                    <p className="text-5xl font-black text-accent">20+</p>
+                    <p className="text-5xl font-black text-accent">13+</p>
                     <p className="text-xs uppercase tracking-widest font-bold text-white/60">Years of Judicial Excellence</p>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-5xl font-black text-accent">500k+</p>
-                    <p className="text-xs uppercase tracking-widest font-bold text-white/60">Cases Processed Annually</p>
+                    <p className="text-5xl font-black text-accent">100+</p>
+                    <p className="text-xs uppercase tracking-widest font-bold text-white/60">Court House Automated</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-6">
                   <div className="h-16 w-16 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
-                    <History className="text-accent h-8 w-8" />
+                    <History className="text-accent h-6 w-6" />
                   </div>
                   <p className="text-lg text-white/80 leading-relaxed">
                     {SITE_DATA.about.history}
