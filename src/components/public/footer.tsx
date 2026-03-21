@@ -17,8 +17,8 @@ export function Footer() {
               <Image
                 src={logo}
                 alt="ECMS Logo"
-                width={700}
-                height={420}
+                width={800}
+                height={520}
                 className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 object-contain"
               />
             </Link>
