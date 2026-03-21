@@ -17,7 +17,7 @@ export function Navbar() {
           <div className="bg-primary p-2 rounded-xl">
             <Scale className="text-white h-6 w-6" />
           </div>
-          <span className="font-headline font-extrabold text-2xl text-primary tracking-tighter italic">Digexa</span>
+          <span className="font-headline font-extrabold text-2xl text-primary tracking-tighter italic">ECMS</span>
         </Link>
 
         {/* Desktop Links */}
