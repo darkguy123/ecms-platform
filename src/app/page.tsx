@@ -164,8 +164,8 @@ export default function HomePage() {
                   <Image 
                     src={courtImageFile} 
                     alt="Modern Courtroom" 
-                    width={100%}
-                    height={100%}
+                    width={1100}
+                    height={1100}
                     className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
                   />
                 </div>
