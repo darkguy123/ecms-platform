@@ -105,7 +105,7 @@ export default function HomePage() {
             <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="rounded-[4rem] overflow-hidden shadow-2xl border-[12px] border-white transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
                 <Image 
-                  src={heroImage?.imageUrl || heroImageFile} 
+                  src={heroImageFile}
                   alt="ECMS Platform" 
                   width={800}
                   height={1000}
