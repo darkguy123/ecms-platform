@@ -42,7 +42,7 @@ export function Footer() {
             <nav className="flex flex-col gap-4">
               <Link href="/terms" className="text-white/60 hover:text-accent transition-colors">Terms of Use</Link>
               <Link href="/privacy" className="text-white/60 hover:text-accent transition-colors">Privacy Policy</Link>
-              <Link href="/admin" className="text-white/20 hover:text-accent transition-colors text-xs">Admin Portal</Link>
+              
             </nav>
           </div>
         </div>
