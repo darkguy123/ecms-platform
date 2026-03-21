@@ -130,9 +130,9 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="space-y-10">
                 <div className="space-y-4">
-                  <h2 className="text-4xl md:text-6xl font-headline font-bold leading-tight">
+                  <h3 className="text-4xl md:text-6xl font-headline font-bold leading-tight">
                     Redefining Justice for the <span className="text-accent">21st Century</span>
-                  </h2>
+                  </h3>
                   <p className="text-xl text-white/70 leading-relaxed font-medium italic">
                     {SITE_DATA.about.mission}
                   </p>
@@ -164,9 +164,9 @@ export default function HomePage() {
                   <Image 
                     src={courtImageFile} 
                     alt="Modern Courtroom" 
-                    width={1100}
-                    height={1100}
-                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                    width={1200}
+                    height={1200}
+                    className="transition-transform duration-400 ease-in-out transform hover:scale-150"
                   />
                 </div>
               </div>
