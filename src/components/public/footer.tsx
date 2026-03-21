@@ -14,10 +14,11 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-16 mb-20">
           <div className="md:col-span-2 space-y-8">
             <Link href="/" className="flex items-center gap-3">
-              <div className="bg-white/10 p-2.5 rounded-xl">
-                <Scale className="text-accent h-6 w-6" />
-              </div>
-              <span className="font-headline font-black text-3xl tracking-tighter">ECMS</span>
+              <Image
+                src={logo}
+                alt="ECMS Logo"
+                className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 object-contain"
+              />
             </Link>
             <p className="text-white/60 text-lg leading-relaxed max-w-sm">
               The Digital Foundation for Modern Justice. Empowering global judiciaries with professional electronic management solutions.
