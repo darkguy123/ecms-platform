@@ -2,6 +2,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import logo from "@/components/public/3e2185b2-d1fe-4017-b8d4-610c42dd0fd1_removalai_preview.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -38,7 +39,7 @@ export function Navbar() {
             alt="ECMS Logo"
             className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 object-contain"
           />
-          <span className="font-headline font-black text-2xl tracking-tighter text-primary">ECMS</span>
+          
         </Link>
 
         {/* Desktop Nav */}
