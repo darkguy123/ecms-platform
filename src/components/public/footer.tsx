@@ -2,6 +2,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/components/public/3e2185b2-d1fe-4017-b8d4-610c42dd0fd1_removalai_preview.png";
 import { Scale } from "lucide-react";
 import { SITE_DATA } from "@/data/site-data";
 
