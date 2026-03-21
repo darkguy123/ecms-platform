@@ -39,7 +39,7 @@ export function Navbar() {
             alt="ECMS Logo"
             width={800}
             height={520}
-            className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 object-contain"
+            className="h-15 w-auto sm:h-17 md:h-16 lg:h-18 object-contain"
           />
           
         </Link>
