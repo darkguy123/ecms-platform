@@ -5,9 +5,9 @@ import Image from "next/image";
 import courtImageFile from "@/components/public/ecmsbanner2-Photoroom.png";
 import heroImageFile from "@/components/public/hero-collage-Photoroom.png";
 import LogoCarousel from "@/components/public/LogoCarousel";
-import Link from "next/link";
 import { Navbar } from "@/components/public/navbar";
 import { Footer } from "@/components/public/footer";
+import { RequestDemoButton } from "@/components/public/request-demo-button";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -95,9 +95,11 @@ export default function HomePage() {
                 {SITE_DATA.home.heroDescription}
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full px-10 h-16 text-lg font-bold shadow-xl shadow-primary/20" onClick={() => setDemoModalOpen(true)}>
-                  REQUEST DEMO
-                </Button>
+                <RequestDemoButton
+                  size="lg"
+                  className="bg-primary text-white hover:bg-primary/90 rounded-full px-10 h-16 text-lg font-bold shadow-xl shadow-primary/20"
+                  label="REQUEST DEMO"
+                />
                 <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 rounded-full px-10 h-16 text-lg font-bold">
                   <a href="#about">LEARN MORE</a>
                 </Button>
