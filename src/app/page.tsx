@@ -116,7 +116,7 @@ export default function HomePage() {
               </div>
               <div className="absolute -bottom-6 -left-6 bg-[#000000] text-primary p-8 rounded-[2.5rem] shadow-2xl hidden md:block">
                 <p className="text-4xl font-black text-[#fff]">100%</p>
-                <p className="font-bold text-xs uppercase tracking-widest leading-tight">Digital Transparency</p>
+                <p className="font-bold text-xs uppercase tracking-widest text-[#fff] leading-tight">Digital Transparency</p>
               </div>
             </div>
           </div>
