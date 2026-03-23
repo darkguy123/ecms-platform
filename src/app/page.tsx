@@ -114,8 +114,8 @@ export default function HomePage() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-accent text-primary p-8 rounded-[2.5rem] shadow-2xl hidden md:block">
-                <p className="text-4xl font-black">100%</p>
+              <div className="absolute -bottom-6 -left-6 bg-[#000000] text-primary p-8 rounded-[2.5rem] shadow-2xl hidden md:block">
+                <p className="text-4xl font-black text-[#fff]">100%</p>
                 <p className="font-bold text-xs uppercase tracking-widest leading-tight">Digital Transparency</p>
               </div>
             </div>
