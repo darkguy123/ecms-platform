@@ -25,6 +25,7 @@ export function Navbar() {
     { name: "Modules", href: "#modules" },
     { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
+    { name: "Blog", href: "#blog"}
   ];
 
   return (
@@ -56,7 +57,7 @@ export function Navbar() {
             </a>
           ))}
           <Button asChild className="bg-primary text-white hover:bg-primary/90 rounded-full px-8 h-12 font-bold shadow-lg shadow-primary/20">
-            <Link href={SITE_DATA.home.demoLink} target="_blank">DEMO</Link>
+            <Link href={SITE_DATA.home.demoLink} target="_blank">REQUEST DEMO</Link>
           </Button>
         </nav>
 
