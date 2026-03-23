@@ -25,7 +25,6 @@ export function Navbar() {
     { name: "Modules", href: "#modules" },
     { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
-    { name: "Blog", href: "#blog"}
   ];
 
   return (
