@@ -14,7 +14,7 @@ export const SITE_DATA = {
   },
   home: {
     heroTitle: "Electronic Court Management System",
-    heroSubtitle: "The Digital Foundation for Modern Justice",
+    heroSubtitle: "The Digital Backbone for Modern Justice",
     heroDescription: "Empower your court with ECMS. Eliminate backlogs and enhance public trust through a secure, integrated platform designed for modern legal operations.",
     demoLink: "https://ecmsfhcadmin.centurycodes.ng/"
   },
