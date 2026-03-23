@@ -88,7 +88,7 @@ export default function HomePage() {
               <h2 className="text-5xl text-[#000] md:text-7xl font-headline font-black leading-[1.1] tracking-tight">
                 {SITE_DATA.home.heroTitle}
               </h2>
-              <p className="text-2xl text-[#13aa11] md:text-3xl font-headline font-semibold text-accent italic">
+              <p className="text-2xl text-[#13aa11] md:text-3xl font-headline font-semibold italic">
                 {SITE_DATA.home.heroSubtitle}
               </p>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
