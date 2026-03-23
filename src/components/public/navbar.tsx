@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import logo from "@/components/public/3e2185b2-d1fe-4017-b8d4-610c42dd0fd1_removalai_preview.png";
+import logo from "@/components/public/ecmslogo.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Scale, Menu, X } from "lucide-react";
