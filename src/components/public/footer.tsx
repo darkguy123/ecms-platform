@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/components/public/ecmslogo.png";
+import logo from "@/components/public/ecmslogowhite2.png";
 import { Scale } from "lucide-react";
 import { SITE_DATA } from "@/data/site-data";
 import { Scale, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
