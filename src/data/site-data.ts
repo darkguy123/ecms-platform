@@ -128,6 +128,26 @@ export const SITE_DATA = {
       features: ["OCR Search", "Data Redundancy", "Quick Retrieval"]
     }
   ],
+  blog: [
+    {
+      id: "modernizing-justice",
+      title: "Modernizing Justice: The Impact of ECMS in Nigeria",
+      excerpt: "Explore how electronic court management is transforming legal processes and reducing case backlogs across federal courts.",
+      content: "The introduction of the Electronic Court Management System (ECMS) has marked a turning point in the Nigerian judiciary. By digitizing case files and enabling remote eFiling, courts have seen a significant reduction in administrative delays and a boost in overall transparency...",
+      date: "2024-03-20",
+      image: "https://picsum.photos/seed/blog1/800/500",
+      category: "Innovation"
+    },
+    {
+      id: "secure-filing-guide",
+      title: "A Practitioner's Guide to Secure eFiling",
+      excerpt: "Step-by-step instructions on how to leverage the ECMS eFiling module for faster, more secure document submissions.",
+      content: "For legal practitioners, time is of the essence. Our eFiling module allows lawyers to submit documents 24/7 without physically visiting the court registry. This guide covers the security protocols and validation steps required for a successful filing...",
+      date: "2024-03-15",
+      image: "https://picsum.photos/seed/blog2/800/500",
+      category: "Tutorial"
+    }
+  ],
   faqs: [
     {
       id: "faq-1",
