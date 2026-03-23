@@ -96,7 +96,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full px-10 h-16 text-lg font-bold shadow-xl shadow-primary/20">
-                  <Link href={SITE_DATA.home.demoLink} target="_blank">DEMO</Link>
+                  <Link href={SITE_DATA.home.demoLink} target="_blank">REQUEST DEMO</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 rounded-full px-10 h-16 text-lg font-bold">
                   <a href="#about">LEARN MORE</a>
